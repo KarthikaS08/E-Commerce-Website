@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.navbar ul,
+li {
+    display: flex;
+}
+
+.navbar a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #1d232c;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.toggle-button {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.header button {
+    background-color: #1d232c;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.service-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.service-available {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.service-available div {
+    background-color: #c5c5c7;
+    width: 400px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.container div {
+    flex-basis: 23%;
+    position: relative;
+}
+
+.container button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.container button:hover {
+    background-color: #c5c5c7;
+}
+
+.newsletter {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.newsletter input {
+    width: 70%;
+    margin-top: 10px;
+    height: 35px;
+    border: solid black 2px;
+    font-size: 25px;
+}
+
+.newsletter button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1d232c;
+    margin-top: 10px;
+    color: white;
+}
+
+.details {
+    background-color: #1d232c;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.search-container {
+    width: 100%;
+    height: fit-content;
+    justify-items: center;
+}
+
+.search-bar {
+    width: 80%;
+    height: 40px;
+    border: solid black 2px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+
+.search-bar input {
+    width: 85%;
+    height: 90%;
+    border: none;
+    margin-left: 20px;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.shirt-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shirt-container div {
+    flex-basis: 25%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.entire-contact {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container {
+    width: 80%;
+    align-items: center;
+    background-color: #1d232c;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.contact-container p {
+    margin-top: 10px;
+}
+
+.contact-container input {
+    width: 95%;
+    height: 55px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-container textarea {
+    width: 95%;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.entire-contact button{
+    background-color: #1d232c;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+
+}
+
+/*Media Query*/
+
+@media screen and (max-width:600px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .header {
+        display: block;
+        margin-left: 20%;
+    }
+
+    .header img {
+        margin-top: 20px;
+    }
+
+    .service-section p {
+        display: none;
+    }
+
+    .service-available {
+        display: block;
+    }
+
+    .service-available div {
+        margin: 10px;
+    }
+}
+
+.side-navbar-link {
+    background-color: #1d232c;
+    color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 1s;
+
+}
+
+.side-navbar-link i {
+    color: white;
+    text-align: right;
+}
+
+.side-navbar-link li {
+    color: white;
+    margin-bottom: 35px;
+    margin-left: 10px;
+}
+
+.side-navbar-link a {
+    text-decoration: none;
+}
